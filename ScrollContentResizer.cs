@@ -7,12 +7,13 @@ public class ScrollContentResizer : MonoBehaviour
     //
     public bool isGoingDown;
     public bool both = false;
-    public RectTransform rectTransform;
+    private RectTransform rectTransform;
     int childCount;
 
     void Start()
     {
          
+        rectTransform = GetComponent<RectTransform>();
         UpdateContentSize(); 
     }
 
