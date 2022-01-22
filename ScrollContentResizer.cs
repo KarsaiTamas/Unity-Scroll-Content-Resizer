@@ -52,10 +52,9 @@ public class ScrollContentResizer : MonoBehaviour
     }
     private void Update()
     {
-        if (childCount!=transform.childCount && isUpdated)
+        if (childCount!=transform.childCount)
         {
             Debug.Log("updated scroll");
-            isUpdated = false;
             UpdateContentSize();
         }
     }
